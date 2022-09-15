@@ -1,0 +1,20 @@
+{
+  "name": "pact-release-tagger",
+  "version": "1.0.0",
+  "description": "Pact release tagger GitHub Action",
+  "main": "index.js",
+  "author": "Zach Davis <zach.davis@appfolio.com>",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "got": "^12.1.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.34.0"
+  },
+  "packageManager": "yarn@3.2.1"
+}
