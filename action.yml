@@ -1,0 +1,18 @@
+name: Pact Release Tagger
+description: Tags each consumer participant with the producer release branch
+inputs:
+  RELEASE_BRANCH:
+    description: The branch name used within the tag
+    required: true
+  PACT_BROKER_URL:
+    description: The pact broker base URL
+    required: true
+  PACT_PROVIDER:
+    description: The pact provider being released
+    required: true
+  PACT_TOKEN:
+    description: The pact API token
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
